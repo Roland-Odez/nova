@@ -1,5 +1,6 @@
 import About from "./components/About"
 import Feature from "./components/Feature"
+import Footer from "./components/Footer"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Story from "./components/Story"
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Feature />
       <Story />
+      <Footer />
     </main>
   )
 }

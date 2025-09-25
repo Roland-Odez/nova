@@ -4,8 +4,7 @@ import { TiLocationArrow } from "react-icons/ti"
 interface BentoCardProps  {
     src: string,
     title: any,
-    description: string,
-    isComingSoon: boolean
+    description: string
 }
 
 interface BentoTiltProps {
@@ -46,7 +45,7 @@ const BentoTilt = ({children, className}: BentoTiltProps) => {
     )
 }
 
-const BentoCard = ({src, title, description, isComingSoon}: BentoCardProps) => {
+const BentoCard = ({src, title, description}: BentoCardProps) => {
     return (
         <div className="relative size-full">
             <video
@@ -83,7 +82,6 @@ const Feature = () => {
                     src='videos/feature-1.mp4'
                     title={<>radi<b>n</b>t</>}
                     description='A cross-platform metagame app. turning your activities across web2 and web3 games into a rewarding adventure.'
-                    isComingSoon
                     />
             </BentoTilt>
 
@@ -93,7 +91,6 @@ const Feature = () => {
                     src="videos/feature-2.mp4"
                     title={<>zi<b>m</b>a</>}
                     description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
-                    isComingSoon={false}
                     />
                 </BentoTilt>
 
@@ -102,7 +99,6 @@ const Feature = () => {
                         src="videos/feature-3.mp4"
                         title={<>n<b>e</b>xus</>}
                         description="A gamified social hub, adding a new dimension of play to social interaction for web3 communities"
-                        isComingSoon={false}
                         />
                 </BentoTilt>
 
@@ -111,7 +107,6 @@ const Feature = () => {
                         src="videos/feature-4.mp4"
                         title={<>az<b>u</b>l</>}
                         description="A cross-world AI agent - elevating your gameplay to be more fun and productive."
-                        isComingSoon={false}
                         />
                 </BentoTilt>
 
